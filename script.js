@@ -727,7 +727,7 @@ guestbookForm.addEventListener("submit", async (e) => {
     await db.collection("guestbook").add({
       name,
       wish,
-      date: new Date().toISOString()
+      date: firebase.firestore.FieldValue.serverTimestamp()
     });
 
     updateRateLimit();
