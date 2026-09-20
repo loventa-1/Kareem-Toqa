@@ -67,6 +67,7 @@ textarea {
   /* الخطوط */
   --font-main: "Montserrat", Arial, sans-serif;
   --font-serif: "Playfair Display", serif;
+   --font-times: "Tinos", "Times New Roman", Times, serif;
 
   /* الحركات */
   --transition-fast: 0.2s ease;
@@ -356,12 +357,17 @@ body:not(.invitation-opened) {
 }
 
 .hero-names h1 {
-  font-size: clamp(28px, 8vw, 50px);
+  font-family: var(--font-times);        /* ✨ الخط الجديد */
+  font-style: italic;                    /* ✨ ميلان الخط */
   font-weight: 400;
+  font-size: clamp(28px, 8vw, 50px);
   line-height: 1.2;
 }
 
 .hero-names .and {
+  font-family: var(--font-times);        /* ✨ الخط الجديد */
+  font-style: italic;
+  font-weight: 400;
   font-size: clamp(24px, 7vw, 44px);
 }
 
