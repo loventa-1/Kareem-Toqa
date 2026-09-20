@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Wedding Invitation</title>
+  </head>
+
+  <body>
+    <!-- ================= الصفحة الأولى: الكارد ================= -->
+    <div class="intro-screen" id="welcomeScreen">
+      <div class="stars" id="stars" data-count="25"></div>
+
+      <main class="intro-page">
+        <section class="card">
+          <img
+            id="cardImage"
+            src="assets/images/card.jpg"
+            alt="Wedding Invitation"
+          />
+
+          <div class="intro-names">
+            <h1>Kareem</h1>
+            <span class="and">&amp;</span>
+            <h1>Tuqa</h1>
+          </div>
+
+          <div class="date-block">
+            <p class="date">
+              <span class="number">2026</span>,
+              <span class="number">06</span>
+              November
+            </p>
+          </div>
+
+          <div class="invite-word">
+            <h2>Cordially Invites</h2>
+          </div>
+
+          <button class="open-btn" id="openInvitation" type="button">
+            Open
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <!-- ================= الصفحة الثانية: التفاصيل ================= -->
+    <main class="details-page" id="detailsScreen">
+      <!-- Hero -->
+      <section class="details-hero" id="heroImage">
+        <div class="hero-names">
+          <h1>Kareem</h1>
+          <span class="and">&amp;</span>
+          <h1>Tuqa</h1>
+        </div>
+
+        <div class="hero-divider">
+          <img src="assets/images/divider.png" alt="" />
+        </div>
+      </section>
+
+      <!-- التفاصيل -->
+      <section class="details-section" id="sectionBg">
+        <!-- Ceremony -->
+        <div class="section-block">
+          <h2 class="section-title" id="ceremonyTitle">CEREMONY INFO</h2>
+          <p class="section-sub" id="ceremonySub1">WE JOYFULLY ANNOUNCE</p>
+          <p class="section-sub" id="ceremonySub2">
+            THE WEDDING OF OUR CHILDREN
+          </p>
+        </div>
+
+        <!-- Couple names -->
+        <div class="section-block details-names">
+          <h1>Kareem</h1>
+          <p class="role">GROOM</p>
+          <span class="and">&amp;</span>
+          <h1>Tuqa</h1>
+          <p class="role">BRIDE</p>
+        </div>
+
+        <!-- الديفايدر الأصلي -->
+        <div class="section-block divider">
+          <img src="assets/images/divider.png" alt="" />
+        </div>
+
+        <!-- Reception -->
+        <div class="section-block">
+          <h2 class="section-title" id="receptionTitle">RECEPTION INFO</h2>
+          <p class="section-sub section-sub--lg" id="receptionSub">
+            THE RECEPTION WILL TAKE PLACE AT:
+          </p>
+
+          <p class="time number" id="receptionTime">20:00</p>
+
+          <div class="date-row">
+            <span class="date-part">THURSDAY</span>
+            <span class="date-sep">|</span>
+            <span class="date-num number">06</span>
+            <span class="date-sep">|</span>
+            <span class="date-part">NOVEMBER</span>
+          </div>
+
+          <p class="date-year number" id="receptionYear">2026</p>
+        </div>
+
+        <!-- Countdown -->
+        <div class="section-block">
+          <h2 class="section-title" id="countdownTitle">COUNTDOWN</h2>
+          <p class="countdown" id="countdown">loading…</p>
+        </div>
+
+        <!-- Calendar -->
+        <div class="section-block calendar-block">
+          <img
+            id="scheduleImage"
+            src="assets/images/schedule.jpg"
+            alt="November 2026 Calendar"
+          />
+        </div>
+
+        <!-- Add to Calendar -->
+        <div class="section-block">
+          <a
+            class="add-calendar"
+            id="addToCalendar"
+            href="#"
+            download="wedding.ics"
+          >
+            Add to Calendar
+          </a>
+        </div>
+
+        <!-- Confirm -->
+        <div class="section-block">
+          <button class="confirm-btn" id="confirmBtn" type="button">
+            CONFIRM ATTENDANCE
+          </button>
+        </div>
+
+        <!-- ============ Location ============ -->
+        <div class="section-block location-block">
+          <h2 class="section-title" id="venueTitle">WEDDING RECEPTION VENUE</h2>
+          <p class="section-sub section-sub--lg" id="venueName">
+            123 Wedding Street, Love City
+          </p>
+
+          <div class="location-map">
+            <img
+              id="locationImage"
+              src="assets/images/location.jpg"
+              alt="Wedding Venue Location"
+            />
+          </div>
+
+          <a
+            class="location-btn"
+            id="venueBtn"
+            href="https://maps.google.com/?q=123+Wedding+Street+Love+City"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GET LOCATION
+          </a>
+        </div>
+
+        <!-- ============ Wedding Day Schedule (Timeline) ============ -->
+        <div class="section-block timeline-block">
+          <h2 class="section-title" id="scheduleTitle">WEDDING DAY SCHEDULE</h2>
+
+          <ul class="timeline" id="timelineList">
+            <!-- يمتلئ من JS -->
+          </ul>
+        </div>
+
+        <!-- ============ Guestbook ============ -->
+        <div class="section-block guestbook-block">
+          <h2 class="section-title" id="guestbookTitle">GUESTBOOK</h2>
+
+          <form class="guestbook-form" id="guestbookForm" novalidate>
+            <input
+              type="text"
+              class="guestbook-input"
+              id="guestName"
+              placeholder="Enter your name*"
+              required
+              maxlength="40"
+            />
+
+            <textarea
+              class="guestbook-input guestbook-textarea"
+              id="guestWish"
+              placeholder="Enter your wishes*"
+              required
+              maxlength="300"
+            ></textarea>
+
+            <div class="guestbook-actions">
+              <button
+                type="button"
+                class="guestbook-emoji"
+                id="emojiPicker"
+                aria-label="Add emoji"
+              >
+                🪄
+              </button>
+
+              <button type="submit" class="guestbook-send" id="guestbookSend">
+                SEND WISHES
+              </button>
+            </div>
+
+            <p class="guestbook-error" id="guestbookError"></p>
+          </form>
+
+          <ul class="guestbook-list" id="guestbookList"></ul>
+        </div>
+
+        <!-- ============ Footer ============ -->
+        <footer class="site-footer" id="siteFooter">
+          <h3 class="footer-title" id="footerTitle"></h3>
+          <ul class="footer-socials" id="footerSocials"></ul>
+          <p class="footer-tagline" id="footerTagline"></p>
+        </footer>
+      </section>
+    </main>
+
+    <!-- ============ Music Player ============ -->
+    <audio id="bgMusic" loop preload="auto"></audio>
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      type="button"
+      aria-label="Toggle music"
+      aria-pressed="false"
+    >
+      <!-- أيقونة النوتة (تظهر لما شغال) -->
+      <svg
+        class="music-icon music-icon--on"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path d="M12 3v10.55A4 4 0 1014 17V7h4V3h-6z" />
+        <path d="M9 13a1 1 0 100 2 1 1 0 000-2z" opacity="0.4" />
+      </svg>
+
+      <!-- أيقونة الكتم (تظهر لما متوقف) -->
+      <svg
+        class="music-icon music-icon--off"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M3 9v6h4l5 5V4L7 9H3zm13.5 3a4.5 4.5 0 00-2.5-4.03v8.05A4.47 4.47 0 0016.5 12z"
+        />
+        <path
+          d="M4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06a9.05 9.05 0 003.5-1.66L19.73 21 21 19.73 4.27 3zM16.5 12a4.5 4.5 0 00-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63z"
+          opacity="0.35"
+        />
+      </svg>
+    </button>
+
+    <!-- Firebase SDK (compat version) -->
+    <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.19.0/firebase-firestore-compat.js"></script>
+
+    <!-- Config -->
+    <script src="config.js"></script>
+
+    <!-- App -->
+    <script src="script.js"></script>
+  </body>
+</html>
