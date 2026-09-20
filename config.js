@@ -42,7 +42,7 @@ const CONFIG = {
     hero: "assets/images/hero.jpg",
     sectionBg: "assets/images/secBG.jpg",
     divider: "assets/images/divider.png",
-    schedule: "assets/images/schedule.jpg",
+    schedule: "assets/images/schedule2.jpg",
     location: "assets/images/location.jpg",
   },
 
