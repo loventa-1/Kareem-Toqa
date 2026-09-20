@@ -276,8 +276,8 @@ function applyConfig() {
   if (addCalendar) addCalendar.textContent = CONFIG.texts.addCalendarText;
 
   // --- زرار Confirm ---
-  const confirmBtn = document.getElementById("confirmBtn");
-  if (confirmBtn) confirmBtn.textContent = CONFIG.texts.confirmButtonText;
+  // const confirmBtn = document.getElementById("confirmBtn");
+  // if (confirmBtn) confirmBtn.textContent = CONFIG.texts.confirmButtonText;
 
   // --- Timeline ---
   renderTimeline();
@@ -449,28 +449,28 @@ addBtn.href = "data:text/calendar;charset=utf-8," + encodeURIComponent(buildICS(
    6) Confirm Attendance
    ============================================================ */
 
-document.getElementById("confirmBtn").addEventListener("click", () => {
-  const method = CONFIG.confirmMethod;
+// document.getElementById("confirmBtn").addEventListener("click", () => {
+//   const method = CONFIG.confirmMethod;
 
-  if (method === "whatsapp") {
-    const phone = CONFIG.whatsapp.phone.replace(/\D/g, "");
-    const msg = encodeURIComponent(CONFIG.whatsapp.message);
-    window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
-    return;
-  }
+//   if (method === "whatsapp") {
+//     const phone = CONFIG.whatsapp.phone.replace(/\D/g, "");
+//     const msg = encodeURIComponent(CONFIG.whatsapp.message);
+//     window.open(`https://wa.me/${phone}?text=${msg}`, "_blank");
+//     return;
+//   }
 
-  if (method === "google_form") {
-    window.open(CONFIG.googleFormUrl, "_blank");
-    return;
-  }
+//   if (method === "google_form") {
+//     window.open(CONFIG.googleFormUrl, "_blank");
+//     return;
+//   }
 
-  if (method === "link" && CONFIG.customLink) {
-    window.open(CONFIG.customLink, "_blank");
-    return;
-  }
+//   if (method === "link" && CONFIG.customLink) {
+//     window.open(CONFIG.customLink, "_blank");
+//     return;
+//   }
 
-  alert("Confirmation method not configured.");
-});
+//   alert("Confirmation method not configured.");
+// });
 
 /* ============================================================
    7) Firebase Init

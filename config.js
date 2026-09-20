@@ -22,7 +22,7 @@ const CONFIG = {
 
   // تفاصيل العرض
   displayDate: {
-    day: "THURSDAY",
+    day: "  FRIDAY",
     dayNumber: "06",
     month: "NOVEMBER",
     year: "2026",
@@ -56,15 +56,15 @@ const CONFIG = {
 
   /* ---------- تأكيد الحضور ---------- */
   // اختار واحد: "whatsapp" أو "google_form" أو "link"
-  confirmMethod: "whatsapp",
+  // confirmMethod: "whatsapp",
 
-  whatsapp: {
-    phone: "201234567890", // ⚠️ بدون + وبدون مسافات
-    message: "أؤكد حضوري لحفل زفاف كريم و تقى 💐",
-  },
+  // whatsapp: {
+  //   phone: "201234567890", // ⚠️ بدون + وبدون مسافات
+  //   message: "أؤكد حضوري لحفل زفاف كريم و تقى 💐",
+  // },
 
-  googleFormUrl: "https://forms.gle/YOUR_FORM_ID",
-  customLink: "",
+  // googleFormUrl: "https://forms.gle/YOUR_FORM_ID",
+  // customLink: "",
 
   /* ---------- نصوص الموقع ---------- */
   texts: {
